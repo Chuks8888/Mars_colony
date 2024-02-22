@@ -1,0 +1,18 @@
+Colony:
+1)	GDB
+2)	Population
+3)	Temperature
+4)	Oxygen
+5)	Faith
+6)	Culture
+7)	Resources
+8)	Living space
+9)	Infrastructure (eg. power plants, space elevators, public transport)
+10)	Space port
+11)	Political System
+12)	Leader
+13)	Epidemic
+14)	Sponsor i.e. Corporation
+15)	Limit of space in colony (resources and population wise)
+16)	Unemployment
+17)	Fertile land

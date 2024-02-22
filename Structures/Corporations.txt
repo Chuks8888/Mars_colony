@@ -1,0 +1,13 @@
+Corporation:
+1)	Name
+2)	Finances
+3)	Army
+4)	War
+5)	Product
+6)	Doctrine
+7)	Goal
+8)	Bonuses
+9)	cons
+10)	Agressivnes
+11)	Influence
+12)	access to technology

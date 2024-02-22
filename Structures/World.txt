@@ -1,0 +1,4 @@
+World:
+1)	Date
+2)	Current technological advancments
+3)	Colonists to import
