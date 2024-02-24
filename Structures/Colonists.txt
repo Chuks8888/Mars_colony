@@ -1,16 +1,13 @@
-Colonist:
-1)	Name
-2)	Surname
-3)	Age
-4)	Height
-5)	Race
-6)	Continent of origin/ born on Mars?
-7)	Strengths
-8)	weaknesses
-9)	Job
-10)	Education
-11)	Hobby
-12)	Class worker or tourist
-13)	Body build obese or slim
-14)	Fertility
-15)	diseases
+Basic info:
+    Name
+    ID
+    Surname
+    Age
+    Height
+    Continent
+    Education
+    Job
+    Hobby
+
+Character traits:
+...
