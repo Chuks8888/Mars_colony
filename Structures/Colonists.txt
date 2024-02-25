@@ -4,7 +4,6 @@ Basic info:
     Surname
     Age
     Height
-    Continent
     Education
     Job
     Hobby

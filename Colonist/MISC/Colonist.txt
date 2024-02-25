@@ -1,0 +1,20 @@
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+               XNWWWWWNN
+              WMMMMMMMMMW               ID:
+             WMMMMMMMMMMMW
+            NWMMMMMMMMMMMMN             NAME:
+            NWMMMMMMMMMMMMN
+            XNMMMMMMMMMMMWX             AGE:
+             KNWMMMMMMMMNX
+              KKXNNNNNXXK               SEX:
+
+        XNWWWMMMMMMMMMMMMMWWWNXK        HEIGHT:
+       NWMMMMMMMMMMMMMMMMMMMMMMWN
+      WMMMMMMMMMMMMMMMMMMMMMMMMMMW      JOB:
+     WMMMMMMMMMMMMMMMMMMMMMMMMMMMMN
+     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMN     HOBBY:
+     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMN
+     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMW
+/////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////

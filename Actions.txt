@@ -1,0 +1,16 @@
+Assuming this is supposed to be a game
+we need actions:
+
+    Reaserch technologies
+    Gather resources
+    Maintain infrastructure
+    Build
+    Scout
+    Sleep
+    Eat
+    Cook
+    Fight
+
+For all those actions, the hobbes and jobs of the colonists
+influence the things they are good at.
+

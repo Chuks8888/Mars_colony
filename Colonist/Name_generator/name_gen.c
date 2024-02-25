@@ -22,7 +22,7 @@ void Person(char* name, char* surname, int *gender)
 	}
 	if(fp == NULL)
 	{
-		printf("error reading file");
+		printf("error reading male/female.txt");
 		exit(1);
 	}
 
@@ -39,7 +39,7 @@ void Person(char* name, char* surname, int *gender)
 	fp = fopen("Name_generator/surnames.txt", "r");
 	if(fp == NULL)
 	{
-		printf("error reading file 2");
+		printf("error reading surnames.txt");
 		exit(1);
 	}
 
