@@ -5,4 +5,4 @@ main:
 	gcc name_gen.o Create.o Activity_gen.o ID_gen.o show_colonist.o -o test
 
 clean:
-	rm *.o
+	del *.o
