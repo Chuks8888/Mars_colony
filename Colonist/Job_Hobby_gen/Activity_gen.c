@@ -28,6 +28,8 @@ void Jobs(char *job)
 
 	strcpy(job, buffer);
 
+	job[strcspn(job, "\n")] = 0;
+
 	fclose(fp);
 	free(buffer);
 }
@@ -54,6 +56,8 @@ void Hobbies(char *hobby)
 	}
 
 	strcpy(hobby, buffer);
+
+	hobby[strcspn(hobby, "\n")] = 0;
 
 	fclose(fp);
 	free(buffer);

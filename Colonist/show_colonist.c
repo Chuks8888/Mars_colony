@@ -22,9 +22,9 @@ void show_colonist(create* temp)
 	printf("                         \n");              
 	printf("        XNWWWMMMMMMMMMMMMMWWWNXK	HEIGHT:\t%d\n", temp->Height);        
 	printf("       NWMMMMMMMMMMMMMMMMMMMMMMWN\n");
-	printf("      WMMMMMMMMMMMMMMMMMMMMMMMMMMW	JOB:\t%s", temp->Job);
+	printf("      WMMMMMMMMMMMMMMMMMMMMMMMMMMW	JOB:\t%s\n", temp->Job);
 	printf("     WMMMMMMMMMMMMMMMMMMMMMMMMMMMMN\n");
-	printf("     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMN	HOBBY:\t%s", temp->Hobby);
+	printf("     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMN	HOBBY:\t%s\n", temp->Hobby);
 	printf("     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMN\n");
 	printf("     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMW\n");
 }

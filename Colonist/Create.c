@@ -8,7 +8,7 @@
 #include <time.h>
 #include <stdlib.h>
 
-#define Population 5 // <<---- Current number of people 
+#define Population 10 // <<---- Current number of people 
 	
 void allocate(create* temp)
 {
@@ -46,6 +46,9 @@ void Height_generator(int *Height, int gender)
 
 int main()
 {
+
+	FILE *cf = fopen("colonists.txt", "w");
+
 	srand(time(NULL));
 
 	create* person[Population];
@@ -67,8 +70,12 @@ int main()
 		id_maker(person[i]->Id, i, person[i]->gender, person[i]->Age);
 
 		show_colonist(person[i]);
-	
+
+		fprintf(cf, "%s %s %s %d %s %d %s %s\n", person[i]->Id, person[i]->Name, person[i]->Surname, person[i]->Age, person[i]->gender == 1? "MALE":"FEMALE", person[i]->Height, person[i]->Job, person[i]->Hobby);
+		
 		discard(person[i]);
 		free(person[i]);
 	}
+
+	fclose(cf);
 }
