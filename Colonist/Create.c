@@ -69,7 +69,7 @@ int main()
 
 		id_maker(person[i]->Id, i, person[i]->gender, person[i]->Age);
 
-		show_colonist(person[i]);
+		/*show_colonist(person[i]);*/
 
 		fprintf(cf, "%s %s %s %d %s %d %s %s\n", person[i]->Id, person[i]->Name, person[i]->Surname, person[i]->Age, person[i]->gender == 1? "MALE":"FEMALE", person[i]->Height, person[i]->Job, person[i]->Hobby);
 		
