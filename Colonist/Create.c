@@ -2,7 +2,7 @@
 #include "Name_generator/name_gen.h"
 #include "Job_Hobby_gen/Activity_gen.h"
 #include "Id_generator/ID_gen.h"
-#include "show_colonist.h"
+#include "MISC/show_colonist.h"
 #include <stdio.h>
 #include <string.h>
 #include <time.h>
@@ -14,9 +14,12 @@ void allocate(create* temp)
 {
 	temp->Name = malloc(15);
 	temp->Surname = malloc(20);
-	temp->Id = malloc(8);
+	temp->Id = malloc(9);
 	temp->Hobby = malloc(40);
 	temp->Job = malloc(40);
+	temp->Traits[0] = malloc(30);
+	temp->Traits[1] = malloc(30);
+	temp->Traits[2] = malloc(30);
 }
 
 void discard(create* temp)
@@ -26,6 +29,9 @@ void discard(create* temp)
 	free(temp->Id);
 	free(temp->Hobby);
 	free(temp->Job);
+	free(temp->Traits[0]);
+	free(temp->Traits[1]);
+	free(temp->Traits[2]);
 }
 
 void Height_generator(int *Height, int gender)

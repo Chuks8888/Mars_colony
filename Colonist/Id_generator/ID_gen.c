@@ -42,5 +42,7 @@ void id_maker(char* ID, int i, int gender, int age)
 	ID[7] = gap%10 + 48;
 	gap = gap/10;
 	ID[6] = gap%10 + 48;
+
+	ID[8] = '\0';
 }
 

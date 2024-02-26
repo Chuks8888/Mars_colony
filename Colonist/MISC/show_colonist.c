@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include "Colonist_structure.h"
+#include "../Colonist_structure.h"
 #include "show_colonist.h"
 
 void show_colonist(create* temp)

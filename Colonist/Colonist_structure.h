@@ -5,10 +5,10 @@ typedef struct colonist
 	*Name, // 15
 	*Surname, // 20
 	*Job, // 20
-	*Hobby; // 20
+	*Hobby,
+	**Traits; // 20
 	
 	int 
-	Trait[62],
 	gender,
 	Height,
 	Age;
