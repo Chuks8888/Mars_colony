@@ -2,10 +2,11 @@
 #include <string.h>
 #include <time.h>
 #include <stdlib.h>
+#include "Trait_gen.h"
 
 #define No_traits 61
 
-void Traits(char **traits)
+void Traitz(char **traits)
 {
     FILE *ch_traits = fopen("Trait_gen/Character_traits.txt", "r");
     if(ch_traits == NULL)

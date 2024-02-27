@@ -1,0 +1,1 @@
+void Traitz(char**);

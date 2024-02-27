@@ -3,6 +3,7 @@
 #include "Job_Hobby_gen/Activity_gen.h"
 #include "Id_generator/ID_gen.h"
 #include "MISC/show_colonist.h"
+#include "Trait_gen/Trait_gen.h"
 #include <stdio.h>
 #include <string.h>
 #include <time.h>
@@ -17,7 +18,8 @@ void allocate(create* temp)
 	temp->Id = malloc(9);
 	temp->Hobby = malloc(40);
 	temp->Job = malloc(40);
-	temp->Traits[0] = malloc(30);
+	temp->Traits = (char**)malloc(sizeof(char*) * 90);
+	temp->Traits[0] = (char*)malloc(30);
 	temp->Traits[1] = malloc(30);
 	temp->Traits[2] = malloc(30);
 }
@@ -32,6 +34,7 @@ void discard(create* temp)
 	free(temp->Traits[0]);
 	free(temp->Traits[1]);
 	free(temp->Traits[2]);
+	free(temp->Traits);
 }
 
 void Height_generator(int *Height, int gender)
@@ -54,6 +57,12 @@ int main()
 {
 
 	FILE *cf = fopen("colonists.txt", "w");
+
+	if(cf == NULL)
+	{
+		printf("error oppening file");
+		exit(1);
+	}
 
 	srand(time(NULL));
 
