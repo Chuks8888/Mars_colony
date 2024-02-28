@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include "Trait_gen.h"
 
-#define No_traits 61
+#define No_traits 51
 
 void Traitz(char **traits)
 {
@@ -17,7 +17,7 @@ void Traitz(char **traits)
 
     char *buffer1 = malloc(30), *buffer2 = malloc(30);
     int temp[3];
-    int i = 0, check = 1; 
+    int i = 0, check; 
     while(i < 3)
     {
         check = 1;
@@ -32,9 +32,10 @@ void Traitz(char **traits)
         {
             fscanf(ch_traits, "%s / %s", buffer1, buffer2);
         }
-        if(i == 3) strcpy(traits[i], buffer2);
+        if(i == 2) strcpy(traits[i], buffer2);
         else strcpy(traits[i], buffer1);
         i++;
+		rewind(ch_traits);
     }
 
     fclose(ch_traits);

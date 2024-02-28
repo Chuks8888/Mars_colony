@@ -50,6 +50,8 @@ void Person(char* name, char* surname, int *gender)
 	}
 	strcpy(surname, buffer);
 
+	name[14] = '\0';
+
 	fclose(fp);
 	free(buffer);
 }

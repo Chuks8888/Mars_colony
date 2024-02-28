@@ -9,7 +9,7 @@
 #include <time.h>
 #include <stdlib.h>
 
-#define Population 10 // <<---- Current number of people 
+#define Population 2 // <<---- Current number of people 
 	
 void allocate(create* temp)
 {
@@ -18,10 +18,10 @@ void allocate(create* temp)
 	temp->Id = malloc(9);
 	temp->Hobby = malloc(40);
 	temp->Job = malloc(40);
-	temp->Traits = (char**)malloc(sizeof(char*) * 90);
+	temp->Traits = (char**)malloc(sizeof(char*) * 100);
 	temp->Traits[0] = (char*)malloc(30);
-	temp->Traits[1] = malloc(30);
-	temp->Traits[2] = malloc(30);
+	temp->Traits[1] = (char*)malloc(30);
+	temp->Traits[2] = (char*)malloc(30);
 }
 
 void discard(create* temp)
@@ -84,9 +84,11 @@ int main()
 
 		id_maker(person[i]->Id, i, person[i]->gender, person[i]->Age);
 
+		Traitz(person[i]->Traits);
+
 		/*show_colonist(person[i]);*/
 
-		fprintf(cf, "%s %s %s %d %s %d %s %s\n", person[i]->Id, person[i]->Name, person[i]->Surname, person[i]->Age, person[i]->gender == 1? "MALE":"FEMALE", person[i]->Height, person[i]->Job, person[i]->Hobby);
+		fprintf(cf, "%s %s %s %d %s %d %s %s %s %s %s\n", person[i]->Id, person[i]->Name, person[i]->Surname, person[i]->Age, person[i]->gender == 1? "MALE":"FEMALE", person[i]->Height, person[i]->Job, person[i]->Hobby, person[i]->Traits[0], person[i]->Traits[1], person[i]->Traits[2]);
 		
 		discard(person[i]);
 		free(person[i]);
